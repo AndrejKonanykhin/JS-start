@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+ul li {
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  position: relative;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: blue;
+  transition: 0.3s;
+  border-bottom: 1px solid blue;
+}
+
+.fixed-left,
+.fixed-right {
+  display: inline-block;
+  position: fixed;
+  top: 100%;
+  margin-top: -50px;
+}
+
+.fixed-left {
+  left: 20px;
+}
+
+.fixed-right {
+  right: 20px;
+}
+
+#consoleLog,
+#method-alert,
+#method-prompt {
+  cursor: pointer;
+}
+
+#trafficLight {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  background: black;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0 0 -60px;
+}
+
+#trafficLights {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#turnoff {
+  padding: 5px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  border-radius: 10px;
+  padding: 5px;
+  background: transparent;
+  font-weight: 600;
+}
+
+#trafficLight1,
+#trafficLight2,
+#trafficLight3 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: black;
+  margin: 10px;
+}
